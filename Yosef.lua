@@ -868,7 +868,7 @@ end
 return false
 end
 if DevYosef(msg) then
-local bl = '⟐︙ اهلا عزيزي آلمـطـور\n⟐︙ آنت آلمـطـور آلآسـآسـي للبوت\n𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻\n⟐︙ تسـتطـيع‌‏ آلتحگم باوامر البوت\n⟐︙ من خلاال الكيبورت خاص بك\n⟐︙ قناة  البوت [اضغط هنا](t.me/Yousef_Labban)'
+local bl = '⟐︙ اهلا عزيزي آلمـطـور\n⟐︙ آنت آلمـطـور آلآسـآسـي للبوت\n𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻\n⟐︙ تسـتطـيع‌‏ آلتحگم باوامر البوت\n⟐︙ من خلاال الكيبورت خاص بك'
 local keyboard = {
 {'الاحصائيات ⟐'},
 {'تعطيل التواصل ⟐','تفعيل التواصل ⟐'},
@@ -1124,21 +1124,6 @@ if #list == 0 then
 t = "⟐︙ لا يوجد ثانويين"
 end
 send(msg.chat_id_, msg.id_, t)
-end
--------------
-if text == "حصريات و تحديثات يوسف" and DevYosef(msg) then
-local updatech =[[
-*يجب عليك الاشتراك في قناة*
-*تحديثات وشروحات  يوسف*
-*قم بالضغط في الاسفل ليحولك الئ القناة*
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '📂┇Yosef.', url="t.me/Yousef_Labban"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(updatech).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-return false
 end
 -----------
 if text == ("قائمه العام ⟐") and DevYosef(msg) then
@@ -6424,7 +6409,7 @@ send(msg.chat_id_, msg.id_, '⟐︙ تم تنزيل جميع الضلعات با
 end
 if text == ("تاك للضلعات") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n⟐︙ قائمة الضلعات الكروب \nٴ≪┉ ┉ ┉ ┉ ┉ ??𝐸𝑉𝐿 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n⟐︙ قائمة الضلعات الكروب \nٴ≪┉ ┉ ┉ ┉ ┉ ??𝐸??𝐿 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -10637,7 +10622,7 @@ if text == 'الرتبه' and tonumber(msg.reply_to_message_id_) > 0 then
 function start_function(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extra,data) 
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
-local username = ' ['..data.first_name_..'](t.me/'..(data.username_ or 'Yousef_Labban')..')'
+local username = ' ['..data.first_name_..'](t.me/'..(data.username_)..')'
 local iduser = result.sender_user_id_
 send(msg.chat_id_, msg.id_,'*- العضو » (*'..username..'*)\n- الرتبه » ('..rtp..')*\n')
 end,nil)
@@ -11596,9 +11581,7 @@ keyboard.inline_keyboard = {
 {
 {text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -11637,9 +11620,6 @@ keyboard.inline_keyboard = {
 },
 {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
-},
-{
-{text = ' 𝙎??𝙐𝙍𝘾𝞝 Yosef', url="t.me/Yousef_Labban"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11903,9 +11883,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -11972,9 +11950,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12023,9 +11999,7 @@ keyboard.inline_keyboard = {
 {
 {text = '?? الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12083,9 +12057,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12147,9 +12119,6 @@ keyboard.inline_keyboard = {
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
-},
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12232,9 +12201,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12306,9 +12273,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12350,9 +12315,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12447,9 +12410,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12504,9 +12465,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12549,9 +12508,7 @@ keyboard.inline_keyboard = {
 {
 {text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12583,9 +12540,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12616,9 +12571,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12646,9 +12599,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12676,9 +12627,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12706,9 +12655,7 @@ keyboard.inline_keyboard = {
 {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12738,9 +12685,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
-{
-{text = ' Yosef', url="t.me/Yousef_Labban"},
-},
+
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
