@@ -1,11 +1,11 @@
 ᑅ══•═══Ys══•═══ᑀ
   ☆:↫كود تنصيب لاول مره مع مكاتب
 ☆:↫انسخ الكود الاتي ↓
-git clone https://github.com/Yosef-lbban/Yosef ;cd Yosef;chmod +x install;./install install
+git clone https://github.com/Yosef-lbban2/Yosef ;cd Yosef;chmod +x install;./install install
 ᑅ══•══Ys═══•═══ᑀ
 ☆:↫كود التنصيب السريع دون مكاتب
 ☆:↫ انسخ الكود الاتي ↓
-git clone https://github.com/Yosef-lbban/Yosef ;cd Yosef;chmod +x install;./install
+git clone https://github.com/Yosef-lbban2/Yosef ;cd Yosef;chmod +x install;./install
 ᑅ══•═══Ys══•═══ᑀ
 ☆:↫ عند انتهاء التنصيب سيطلب منك 
 1⇠ توكن البوت حط التوكن واضغط انتر

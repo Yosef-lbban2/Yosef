@@ -137,13 +137,7 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-__   __              __ 
-\ \ / /__  ___  ___ / _|
- \ V / _ \/ __|/ _ \ |_ 
-  | | (_) \__ \  __/  _|
-  |_|\___/|___/\___|_|
-> CH › @Yousef_Labban
-~> DEVELOPER › @S_X_X_C
+البوت الاسلامي المجاني
 ]])
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -156,7 +150,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_Yosef/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban2/Files_Yosef/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -169,7 +163,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,874820580,1566031059,1695110211,1365465894}   
+sudo_users = {SUDO,874820580}   
 function SudoBot(msg)  
 local Yosef = false  
 for k,v in pairs(sudo_users) do  
@@ -301,12 +295,6 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(874820580) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(1566031059) then
-var = 'Dev'
-elseif tonumber(user_id) == tonumber(1695110211) then
-var = 'Dev'
-elseif tonumber(user_id) == tonumber(1365465894) then
-var = 'Dev'
 elseif tonumber(user_id) ==
  tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -1071,7 +1059,7 @@ end
 
 if text == 'تحديث السورس⟐' and DevYosef(msg) then 
 os.execute('rm -rf Yosef.lua')
-os.execute('wget https://raw.githubusercontent.com/Yosef-lbban/Yosef/main/Yosef.lua')
+os.execute('wget https://raw.githubusercontent.com/Yosef-lbban2/Yosef/main/Yosef.lua')
 send(msg.chat_id_, msg.id_,'⟐︙ تم تحديث السورس\n⟐︙ لديك اخر اصدار لسورس يوسف\n⟐︙ الاصدار » { v 1.6 }')
 dofile('Yosef.lua')  
 end
@@ -2368,7 +2356,7 @@ end
 return false
 end
 os.execute('rm -rf Yosef.lua')
-os.execute('wget https://raw.githubusercontent.com/Yosef-lbban/Yosef/main/Yosef.lua')
+os.execute('wget https://raw.githubusercontent.com/Yosef-lbban2/Yosef/main/Yosef.lua')
 send(msg.chat_id_, msg.id_,'⟐︙ تم تحديث السورس \n⟐︙ لديك اخر اصدار لسورس يوسف\n⟐︙ الاصدار » { v 1.6 }')
 dofile('Yosef.lua')  
 end
@@ -2679,11 +2667,7 @@ end,nil)
 end
 if text == 'السورس' or text == '' or text == 'يا سورس' then
 Text = [[
-⟐ ↬Welcome to Source 
-==================
-⟐ ↬ SOURCE Yosef 
-==================
-⟐ ↬︙ [Source Developer](http://t.me/Yousef_Labban)
+المسلم
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -4043,7 +4027,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevYosef(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/Yosef-lbban/Files_Yosef/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/Yosef-lbban2/Files_Yosef/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -4081,7 +4065,7 @@ t = " ⟐∫ الملف » "..file.."\n ⟐∫ تم تعطيل ملف \n"
 else
 t = " ⟐∫ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Yosef-lbban/Files_Yosef/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/Yosef-lbban2/Files_Yosef/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -4101,7 +4085,7 @@ t = " ⟐∫ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ⟐∫ الملف » "..file.."\n ⟐∫ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Yosef-lbban/Files_Yosef/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/Yosef-lbban2/Files_Yosef/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -11596,7 +11580,7 @@ local Text =[[
 *9️⃣◂ اوامر مطور الاساسي .*
 *🔟◂ اوامر الاعضاء .*
 *𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻*
-➫ .[ Yosef. ](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11644,7 +11628,7 @@ local Text =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻*
-➫ .[ Yosef. ](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11682,7 +11666,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴ\n⟐︙ ➫ .[ Yosef. ](t.me/Yousef_Labban)➤ ')
+send(msg.chat_id_, msg.id_, t..'𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴ\n⟐︙ البوت الاسلامي المجاني ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '⟐︙ تم تعطيل الابراج')
@@ -11900,7 +11884,7 @@ local Teext =[[
 ⟐︙ الجهات
 ⟐︙ الاشعارات
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11969,7 +11953,7 @@ local Teext =[[
 ⟐︙اوامر التحشيش
 ⟐︙صورتي 
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12020,7 +12004,7 @@ local Teext =[[
 ⟐︙ وصف
 ⟐︙ تكرار + عدد
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12080,7 +12064,7 @@ local Teext =[[
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴ
 ⟐︙ الاوامر المضافه ( لعرض الاوامر المضافه ) 
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12145,7 +12129,7 @@ local Teext =[[
 ⟐︙ تغير امر الاوامر
 ⟐︙ تغير امر م1 ~ الئ م10
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12229,7 +12213,7 @@ local Teext =[[
 ⟐︙الساعه
 ⟐︙التاريخ
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12303,7 +12287,7 @@ local Teext =[[
 ⟐︙رفع + تنزيل ← الحاته
 ⟐︙تاك للحاتات
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12347,7 +12331,7 @@ local Teext =[[
 ⟐︙اسم ~ ايدي + بوت غادر 
 ⟐︙اذاعه 
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12444,7 +12428,7 @@ local Teext =[[
 ⟐︙تنظيف المشتركين
 ⟐︙تنظيف الكروبات
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef.](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12501,7 +12485,7 @@ local Teext =[[
 ⟐︙شنو رئيك بهاي بالرد
 ⟐︙تحب هذا
 𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻ٴٴ
-➫ .[ Yosef. ](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12549,7 +12533,7 @@ local Teext =[[
 *9️⃣◂ اوامر مطور الاساسي .*
 *🔟◂ اوامر الاعضاء .*
 *𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻*
-➫ .[ Yosef. ](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12744,7 +12728,7 @@ local Teext =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *𓍹ⵧⵧⵧⵧⵧⵧ⊱•Yosef•⊰ⵧⵧⵧⵧⵧⵧ𓍻*
-➫ .[ Yosef. ](t.me/Yousef_Labban)➤
+البوت الاسلامي المجاني
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
